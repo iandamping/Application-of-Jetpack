@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/NavTopRated"
+            android:title="Toprated" />
+        <item
+            android:id="@+id/NavPopuler"
+            android:title="Popular" />
+        <item
+            android:id="@+id/NavEventMenu"
+            android:title="Event" />
+    </group>
+</menu>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">RisetJetpack</string>
+    <string name="roll_the_dice">Roll Dice</string>
+    <string name="api_key">9986464dc7ff8e83569e65a98dc7b3b6</string>
+    <string name="image_formater">https://image.tmdb.org/t/p/w500/</string>
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_closed">Close</string>
+
+    <string name="popular_pref_key">popular Key</string>
+    <string name="popular_name">popular name</string>
+    <string name="toprated_pref_key">toprated Key</string>
+    <string name="toprated_name">toprated name</string>
+    <string name="upcoming_pref_key">upcoming Key</string>
+    <string name="upcoming_name">upcoming name</string>
+
+    <string name="user_vote">%.1f</string>
+
+    <string-array name="random_names">
+        <item>Jonathan</item>
+        <item>Chris</item>
+        <item>Leon</item>
+        <item>Vexana</item>
+        <item>Martis</item>
+        <item>Balerick</item>
+        <item>Maverick</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

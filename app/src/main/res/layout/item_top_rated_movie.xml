@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="TopRated"
+            type="com.example.junemon.risetjetpack.database.model.TopRatedModelClass.Result" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_medium"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:id="@+id/llMoviesProperties"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/spacing_medium"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivPosterPath"
+                poster_path="@{@string/image_formater + TopRated.poster_path}"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvMovieTittles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:text="@{TopRated.title}"
+                android:textStyle="bold"
+                tools:text="Movie Tittle" />
+            <TextView
+                android:id="@+id/tvMovieDateRelease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@{TopRated.release_date}"
+                tools:text="July 20, 2018" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</layout>

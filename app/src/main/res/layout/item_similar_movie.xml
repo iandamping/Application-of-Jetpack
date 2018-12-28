@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="SimilarData"
+            type="com.example.junemon.risetjetpack.database.model.SimilarMovieModelClass.Result" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ivSimilarMovie"
+            poster_path="@{@string/image_formater + SimilarData.backdrop_path}"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            tools:src="@drawable/captures" />
+
+        <TextView
+            android:id="@+id/tvSimilarMovieTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:layout_toEndOf="@id/ivSimilarMovie"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/textColorPrimary"
+            android:textStyle="bold"
+            android:text="@{SimilarData.title}"
+            tools:text="Judul film" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSimilarMovieTittle"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:layout_toEndOf="@id/ivSimilarMovie"
+            android:fontFamily="@font/montserrat"
+            android:text="@{SimilarData.release_date}"
+            tools:text="2018-20-13" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/movie_navigation"
+    app:startDestination="@id/topRatedFragment">
+
+    <fragment
+        android:id="@+id/topRatedFragment"
+        android:name="com.example.junemon.risetjetpack.movie.TopRatedMovieFragment"
+        android:label="Top Rated Movie">
+        <action
+            android:id="@+id/action_topRatedFragment_to_detailPopularMovieFragment"
+            app:destination="@id/detailPopularMovieFragment" />
+    </fragment>
+    <!--<fragment-->
+    <!--android:id="@+id/movieFragment"-->
+    <!--android:name="com.example.junemon.risetjetpack.movie.popular.PopularMovieFragment"-->
+    <!--android:label="Popular Movie" >-->
+    <!--<action-->
+    <!--android:id="@+id/action_movieFragment_to_detailPopularMovieFragment"-->
+    <!--app:destination="@id/detailPopularMovieFragment"-->
+    <!--app:launchSingleTop="true"-->
+    <!--app:popUpTo="@+id/topRatedFragment"-->
+    <!--app:popUpToInclusive="true" />-->
+    <!--</fragment>-->
+    <fragment
+        android:id="@+id/detailPopularMovieFragment"
+        android:name="com.example.junemon.risetjetpack.movie.detail.DetailPopularMovieFragment"
+        android:label="DetailPopularMovieFragment">
+        <argument
+            android:name="MovieId"
+            app:argType="integer" />
+    </fragment>
+</navigation>
